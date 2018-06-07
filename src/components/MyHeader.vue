@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'MyHeader',
+  name: 'MyHeader',//geiwwwwwwwwwwwwwwwwwwwwww
   props: {
     seller: Object
   }
