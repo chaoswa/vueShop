@@ -1,21 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Goods from './components/Goods'
+import Ratings from './components/Ratings'
+import Seller from './components/Seller'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: '/goods',
+      name: 'goods',
+      component: Goods
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/ratings',
+      name: 'ratings',
+      component: Ratings
+    },
+    {
+      path: '/seller',
+      name: 'seller',
+      component: Seller
+    },
+    { path: '*', 
+      redirect: { name: 'goods' }
     }
   ]
 })
